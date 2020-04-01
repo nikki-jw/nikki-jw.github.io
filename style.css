@@ -11,24 +11,16 @@ html {
 
 
 body {
-    background: white;
+    background: #FDC54E;
     font-family: 'Quicksand', sans-serif;
     position: flex;
-}
-
-div {
-
 }
 
 ul {
     list-style: none;
 }
 
-li {
-    padding-left: 5%;
-}
-
-.name-rapper {
+.rapper {
     display: flex;
     width: 100%;
     height: 100%;
@@ -38,13 +30,13 @@ li {
 h1 {
     display: block;
     font-size: 60px;
-    color: #665A5A;
+    color: #2141B0;
     letter-spacing: 10px;
 }
 
 a {
     text-decoration: none;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
 
 a:visited, a:focus {
@@ -66,8 +58,6 @@ a:visited, a:focus {
     flex-direction: row;
     justify-content: flex-end;
     color: #665A5A;
-
-
 }
 
 #main-intro {
@@ -82,18 +72,71 @@ a:visited, a:focus {
 
 }
 
-#hero-img {
+#contact-intro {
+    position: absolute;
+    margin: 0px;
+    top: 25%;
+    left: 10%;
+    font-size: 40px;
+    color:  #2141B0;
+    letter-spacing: 3px;
+    font-weight: bolder;
+
+}
+
+#about-intro {
+    position: absolute;
+    margin: 0px;
+    top: 30%;
+    left: 10%;
+    font-size: 40px;
+    color:  #2141B0;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.background-img {
     width: 100%;
     padding: 0px;
     position: absolute;
     top: -20%;
     z-index: -1;
-
 }
 
-#about-img {
-    width: 100%;
+@media screen and (max-width: 800px) {
+    .background-img {
+        display: none;
+    }
 }
+
+.nav-item {
+    padding-left: 5%;
+    font-weight: bolder;
+}
+
+
+.socials-img {
+    width: 50px;
+}
+
+.contact-socials-img {
+    width: 65px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+#socials-bar ul {
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
 
 button {
     box-sizing: border-box;
@@ -106,21 +149,20 @@ button {
     margin: 20px;
     padding: 20px 30px;
     text-align: center;
-    font-weight: bolder;
+    font-size: 20px;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     font-family: 'Quicksand', sans-serif;
 }
+
+button:hover span {display:none}
+button:hover:before {content:"Cos' it's cute!"}
 
 
 button:hover {
     box-shadow: 0 0 40px 40px rgb(0, 40, 187) inset;
     color: #6285FC;
 }
-@media (max-width: 600px) {
-    #hero-img{
-        top: 0;
-    }
 
-    h1 {
-        font-size: 30px;
-    }
+.nav-item:hover {
+    font-weight: 10000;
+}
