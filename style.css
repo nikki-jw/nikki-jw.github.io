@@ -37,9 +37,10 @@ h1 {
 a {
     text-decoration: none;
     transition: all 0.3s ease-out;
+    color: #2141B0;
   }
 
-a:visited, a:focus {
+a:visited, a:focus, a:active {
     text-decoration: none;
     color: #2141B0;
   }
@@ -76,7 +77,7 @@ a:visited, a:focus {
     position: absolute;
     margin: 0px;
     top: 25%;
-    left: 10%;
+    left: 15%;
     font-size: 40px;
     color:  #2141B0;
     letter-spacing: 3px;
@@ -87,7 +88,7 @@ a:visited, a:focus {
 #about-intro {
     position: absolute;
     margin: 0px;
-    top: 30%;
+    top: 25%;
     left: 10%;
     font-size: 40px;
     color:  #2141B0;
@@ -95,11 +96,15 @@ a:visited, a:focus {
     font-weight: bolder;
 }
 
+#down-img {
+    width: 30px;
+}
+
 .background-img {
     width: 100%;
     padding: 0px;
     position: absolute;
-    top: -20%;
+    top: -30%;
     z-index: -1;
 }
 
@@ -114,9 +119,17 @@ a:visited, a:focus {
     font-weight: bolder;
 }
 
+.nav-item:hover {
+    text-decoration: underline;
+}
+
 
 .socials-img {
     width: 50px;
+}
+
+.socials-img:hover {
+    width: 55px;
 }
 
 .contact-socials-img {
@@ -126,6 +139,10 @@ a:visited, a:focus {
 .social-icon {
     display: flex;
     align-items: center;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
 }
 
 #socials-bar ul {
@@ -142,6 +159,7 @@ button {
     box-sizing: border-box;
     background-color: #6285FC;
     color: #2141B0;
+    border: #6285FC;
     border-radius: 2em;
     display: flex;
     align-self: center;
@@ -161,8 +179,5 @@ button:hover:before {content:"Cos' it's cute!"}
 button:hover {
     box-shadow: 0 0 40px 40px rgb(0, 40, 187) inset;
     color: #6285FC;
-}
-
-.nav-item:hover {
-    font-weight: 10000;
+    border: #2141B0;;
 }
